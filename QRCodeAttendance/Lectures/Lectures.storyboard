@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g7J-Gd-97E">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Courses-->
+        <scene sceneID="Eo9-Z2-IB6">
+            <objects>
+                <navigationController id="g7J-Gd-97E" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Courses" image="book" catalog="system" id="kej-FK-Mxq"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ntf-qX-C6w">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Gz0-Ur-Doa" kind="relationship" relationship="rootViewController" id="xFw-gm-77K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cyh-9H-dfG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2559" y="-265"/>
+        </scene>
+        <!--Lectures View Controller-->
+        <scene sceneID="3As-3E-Xb6">
+            <objects>
+                <viewController id="Gz0-Ur-Doa" customClass="LecturesViewController" customModule="QRCodeAttendance_Prod" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NSp-x9-2U1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n07-YS-j1f">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Gz0-Ur-Doa" id="at9-lr-sNO"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Br6-E8-nrR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="n07-YS-j1f" firstAttribute="leading" secondItem="Br6-E8-nrR" secondAttribute="leading" id="6QF-Tx-Mtr"/>
+                            <constraint firstItem="n07-YS-j1f" firstAttribute="top" secondItem="Br6-E8-nrR" secondAttribute="top" id="UaW-IM-SJq"/>
+                            <constraint firstItem="n07-YS-j1f" firstAttribute="trailing" secondItem="Br6-E8-nrR" secondAttribute="trailing" id="aPr-ul-hKB"/>
+                            <constraint firstItem="n07-YS-j1f" firstAttribute="bottom" secondItem="Br6-E8-nrR" secondAttribute="bottom" id="dwq-4K-2gD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ncA-Ai-qj7"/>
+                    <connections>
+                        <outlet property="tableView" destination="n07-YS-j1f" id="KMd-J1-Ro6"/>
+                        <segue destination="cLP-Ef-rhk" kind="presentation" identifier="ShowCreateLecture" id="GaF-Ov-oMY"/>
+                        <segue destination="OiI-21-2Zj" kind="unwind" identifier="unwindFromEditLecture" unwindAction="unwindFromEditOrCreateLectureWithSegue:" id="kIV-TP-yHo"/>
+                        <segue destination="wbT-eI-X5Y" kind="show" identifier="ShowLectureInfo" id="pTB-j3-2iU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DNu-aW-iLm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="OiI-21-2Zj" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-1697.1014492753625" y="-264.50892857142856"/>
+        </scene>
+        <!--Lecture Info View Controller-->
+        <scene sceneID="V9N-Kn-XG1">
+            <objects>
+                <tableViewController id="wbT-eI-X5Y" customClass="LectureInfoViewController" customModule="QRCodeAttendance_Prod" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wwp-Gl-AZY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="wbT-eI-X5Y" id="4Yn-iy-Chf"/>
+                            <outlet property="delegate" destination="wbT-eI-X5Y" id="fme-cP-Wkd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="lTS-be-Zds"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lat-EK-t7I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-787" y="-265"/>
+        </scene>
+        <!--Edit Lecture View Controller-->
+        <scene sceneID="KCT-gB-bg1">
+            <objects>
+                <viewController id="mdG-27-bQF" customClass="EditLectureViewController" customModule="QRCodeAttendance_Prod" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kzS-Qg-Fhj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="oT5-2f-4Lb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0zU-1N-z5h"/>
+                    <connections>
+                        <segue destination="FLg-Ap-4V4" kind="unwind" identifier="unwindFromEditLecture" unwindAction="unwindFromEditOrCreateLectureWithSegue:" id="oio-H3-pkg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lQ7-PR-Ut0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="FLg-Ap-4V4" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-786.95652173913049" y="448.66071428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fZW-G3-jnn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cLP-Ef-rhk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RfY-WC-GWi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mdG-27-bQF" kind="relationship" relationship="rootViewController" id="H64-Ws-Pp2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TLZ-rp-bRe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1697.1014492753625" y="448.66071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book" catalog="system" width="128" height="102"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

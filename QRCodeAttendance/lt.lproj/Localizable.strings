@@ -1,0 +1,51 @@
+/* 
+  Localizable.strings
+  QRCodeAttendance
+
+  Created by Laurynas Letkauskas on 2021-03-12.
+  
+*/
+
+// Login
+
+"login_title" = "Prisijungti";
+"login_subtitle" = "Prisijunkite prie savo paskyros norėdami naudoti QrVisit";
+"login_continue" = "Arba tęskite su";
+
+"login_error_empty_email" = "El. pašto laukas turi būti užpildytas";
+"login_error_empty_password" = "Slaptažodžio laukas turi būti užpildytas";
+"login_error_empty_email_password" = "El. pašto ir slaptažodžio laukeliai turi būti užpildyti";
+
+
+// Register
+
+"register_title" = "Registracija";
+"register_subtitle" = "Susikurkite paskyrą norėdami naudotis QRVisit paslaugomis.";
+"register_name_placeholder" = "Vardas";
+"register_surname_placeholder" = "Pavardė";
+
+"registration_error_empty_name" = "Vardo laukas turi būti užpidytas";
+"registration_error_empty_surname" = "Pavardės laukas turi būti užpildytas";
+
+
+// Error handling
+
+"error_no_firebaseUser" = "Nepavyko gauti esamo naudotojo";
+"error_no_firebaseIdToken" = "Nepavyko gauti esamo naudotojo";
+
+// Placeholders
+
+"email_address_placeholder" = "El. paštas";
+"password_placeholder" = "Slaptažodis";
+
+// Main screen - Courses
+
+"my_courses" = "Mano užsiėmimai";
+"more" = "Daugiau";
+"upcoming_courses" = "Artėjantys užsiėmimai";
+"course_title" = "Paskaita:";
+"course_description" = "Aprašmas:";
+"course_faculty" = "Fakultetas:";
+"course_owner" = "Vykdantysis dėstytojas:";
+
+"email_already_in_use" = "Šis el. paštas jau užimtas";

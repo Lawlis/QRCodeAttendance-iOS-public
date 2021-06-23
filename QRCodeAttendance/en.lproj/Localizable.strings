@@ -1,0 +1,49 @@
+/* 
+  Localizable.strings
+  QRCodeAttendance
+
+  Created by Laurynas Letkauskas on 2021-03-12.
+  
+*/
+
+// Login
+
+"login_title" = "Login";
+"login_subtitle" = "Please login to your account to use QrVisit";
+"login_continue" = "Or continue with";
+
+// Error handling
+
+"error_no_firebaseUser" = "Failed to get current user";
+"error_no_firebaseIdToken" = "Failed to get current user";
+
+// Email placeholder
+
+"email_address_placeholder" = "Email address";
+"password_placeholder" = "Password";
+"more" = "More";
+
+// Main screen  - courses
+
+"my_courses" = "Courses";
+"upcoming_courses" = "Upcoming courses";
+"course_title" = "Course title:";
+"course_description" = "Description:";
+"course_faculty" = "Faculty:";
+"course_owner" = "Main lecturer:";
+
+// Login
+
+"login_error_empty_email" = "Email must not be empty";
+"login_error_empty_password" = "Password must not be empty";
+"login_error_empty_email_password" = "Email and password fields must not be empty";
+
+"register_title" = "Register";
+"register_subtitle" = "Register an account to use QRVisit services";
+"register_name_placeholder" = "Name";
+"register_surname_placeholder" = "Surname";
+
+"registration_error_empty_name" = "Name field must not be empty";
+"registration_error_empty_surname" = "Surname field must not be empty";
+
+"email_already_in_use" = "This email is already in use";

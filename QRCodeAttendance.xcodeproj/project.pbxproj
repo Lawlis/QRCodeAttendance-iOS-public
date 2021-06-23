@@ -1,0 +1,1595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B7239E36ECC8E5C48061756 /* libPods-QRCodeAttendance-Prod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8ED910CFE07E3EBA47B15E0 /* libPods-QRCodeAttendance-Prod.a */; };
+		D80468FB25FA2E21000327DF /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80468FA25FA2E21000327DF /* ErrorHandler.swift */; };
+		D804690A25FA30C1000327DF /* Lectures.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D804690925FA30C1000327DF /* Lectures.storyboard */; };
+		D804691425FA3253000327DF /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D804691325FA3253000327DF /* TabBar.storyboard */; };
+		D804692725FA340E000327DF /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D804692625FA340E000327DF /* MoreViewController.swift */; };
+		D804693025FA3435000327DF /* LecturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D804692F25FA3435000327DF /* LecturesViewController.swift */; };
+		D804693E25FA3DCF000327DF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D804693D25FA3DCF000327DF /* TabBarViewController.swift */; };
+		D804694725FA4376000327DF /* UIStoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D804694625FA4376000327DF /* UIStoryboardExtensions.swift */; };
+		D81333692608BFDB00C72B68 /* SearchPushRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81333682608BFDB00C72B68 /* SearchPushRow.swift */; };
+		D81333AA2608F28500C72B68 /* SelectUsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81333A92608F28500C72B68 /* SelectUsersTableViewController.swift */; };
+		D817524425F185E400AE207D /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D817524325F185E400AE207D /* UIViewExtensions.swift */; };
+		D817524925F1861000AE207D /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D817524825F1861000AE207D /* StringExtensions.swift */; };
+		D82C510726123F870006875F /* CreateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82C510626123F870006875F /* CreateGroupViewController.swift */; };
+		D82C5192261391AB0006875F /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = D82C5191261391AB0006875F /* MBProgressHUD */; };
+		D82C519E2613A0890006875F /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82C519D2613A0890006875F /* Events.storyboard */; };
+		D82C51A32613A1510006875F /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82C51A22613A1510006875F /* EventsViewController.swift */; };
+		D82C5221261658720006875F /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82C5220261658710006875F /* UITextFieldExtensions.swift */; };
+		D85F518625F166C400AD5A05 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D85F518525F166C400AD5A05 /* Colors.xcassets */; };
+		D85F518B25F1699700AD5A05 /* TextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85F518A25F1699700AD5A05 /* TextInputView.swift */; };
+		D85F519425F16A7700AD5A05 /* TextInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D85F519325F16A7700AD5A05 /* TextInputView.xib */; };
+		D85F519C25F1828C00AD5A05 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85F519B25F1828C00AD5A05 /* PrimaryButton.swift */; };
+		D87EBA0825EEB28800A80DC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87EBA0725EEB28800A80DC8 /* AppDelegate.swift */; };
+		D87EBA1125EEB28D00A80DC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87EBA1025EEB28D00A80DC8 /* Assets.xcassets */; };
+		D87EBA1425EEB28D00A80DC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87EBA1225EEB28D00A80DC8 /* LaunchScreen.storyboard */; };
+		D87EBA1F25EEB28D00A80DC8 /* QRCodeAttendanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87EBA1E25EEB28D00A80DC8 /* QRCodeAttendanceTests.swift */; };
+		D87EBA2A25EEB28D00A80DC8 /* QRCodeAttendanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87EBA2925EEB28D00A80DC8 /* QRCodeAttendanceUITests.swift */; };
+		D87EBA4425EEB7EE00A80DC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D87EBA4325EEB7EE00A80DC8 /* GoogleService-Info.plist */; };
+		D87EBA4D25EEBA1400A80DC8 /* SegueIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87EBA4C25EEBA1400A80DC8 /* SegueIdentifier.swift */; };
+		D87EBA5525EEBAAF00A80DC8 /* UIViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87EBA5425EEBAAF00A80DC8 /* UIViewControllerUtils.swift */; };
+		D8A046652642B2F20014A119 /* MyQR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A046642642B2F20014A119 /* MyQR.storyboard */; };
+		D8A046672642D6C20014A119 /* MyQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A046662642D6C20014A119 /* MyQRViewController.swift */; };
+		D8A0466B2642DC3E0014A119 /* EventAttendeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A046692642DC3E0014A119 /* EventAttendeeCell.swift */; };
+		D8A0466C2642DC3E0014A119 /* EventAttendeeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8A0466A2642DC3E0014A119 /* EventAttendeeCell.xib */; };
+		D8A046702643154D0014A119 /* LecturesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0466F2643154D0014A119 /* LecturesDataModel.swift */; };
+		D8A0467226431B9B0014A119 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0467126431B9B0014A119 /* Alert.swift */; };
+		D8B0DE1225FE0E8C00A4B129 /* LoginDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B0DE1125FE0E8C00A4B129 /* LoginDataModel.swift */; };
+		D8B1B5D225FFC7D800CCF43D /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D8B1B5D125FFC7D800CCF43D /* IQKeyboardManagerSwift */; };
+		D8B1B67526011E6000CCF43D /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1B67426011E6000CCF43D /* SecondaryButton.swift */; };
+		D8B1B67E2601307200CCF43D /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1B67D2601307100CCF43D /* Group.swift */; };
+		D8B1B68C2601334800CCF43D /* Faculty.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1B68B2601334800CCF43D /* Faculty.swift */; };
+		D8B34795262338ED005066C2 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B34794262338ED005066C2 /* EventDetailsViewController.swift */; };
+		D8B347A126233B2D005066C2 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B347A026233B2D005066C2 /* QRCodeViewController.swift */; };
+		D8B347AA2623664F005066C2 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B347A92623664F005066C2 /* ScannerViewController.swift */; };
+		D8BC42322621D87500686603 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BC42302621D87500686603 /* EventCell.swift */; };
+		D8BC42332621D87500686603 /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8BC42312621D87500686603 /* EventCell.xib */; };
+		D8BC941025FB8C9B00BC4CEA /* ReplaceRootSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BC940F25FB8C9B00BC4CEA /* ReplaceRootSegue.swift */; };
+		D8BC942E25FB97EF00BC4CEA /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BC942D25FB97EF00BC4CEA /* UIApplicationExtensions.swift */; };
+		D8BC943C25FBA52500BC4CEA /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BC943B25FBA52500BC4CEA /* UIColorExtensions.swift */; };
+		D8BC945225FBAD2200BC4CEA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8BC945625FBAD2200BC4CEA /* Localizable.strings */; };
+		D8BC946D25FBB9C300BC4CEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BC946C25FBB9C300BC4CEA /* SceneDelegate.swift */; };
+		D8BC948525FBC5E000BC4CEA /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BC948425FBC5E000BC4CEA /* UITableViewExtensions.swift */; };
+		D8BC94BC25FBCE9F00BC4CEA /* LectureCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BC94BB25FBCE9F00BC4CEA /* LectureCellViewModel.swift */; };
+		D8BC94D025FBCF9600BC4CEA /* AnyCellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BC94CF25FBCF9600BC4CEA /* AnyCellRepresentable.swift */; };
+		D8BC94E825FBCFF000BC4CEA /* CellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BC94E725FBCFF000BC4CEA /* CellRepresentable.swift */; };
+		D8BC955125FC006C00BC4CEA /* LectureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BC954F25FC006C00BC4CEA /* LectureTableViewCell.swift */; };
+		D8BC955425FC006C00BC4CEA /* LectureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8BC955025FC006C00BC4CEA /* LectureTableViewCell.xib */; };
+		D8C8D6A42607623400EBAA82 /* LoginLinkAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8D6A32607623400EBAA82 /* LoginLinkAccountsViewController.swift */; };
+		D8C8D6D0260773D300EBAA82 /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8D6CF260773D300EBAA82 /* Networkable.swift */; };
+		D8C8D6E7260782DA00EBAA82 /* LecturesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8D6E6260782DA00EBAA82 /* LecturesDataSource.swift */; };
+		D8C8D7052607BEA600EBAA82 /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = D8C8D7042607BEA600EBAA82 /* Eureka */; };
+		D8C8D70D2607BF7D00EBAA82 /* EditLectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8D70C2607BF7D00EBAA82 /* EditLectureViewController.swift */; };
+		D8C9A57325F4D0C10079A258 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = D8C9A57225F4D0C10079A258 /* Moya */; };
+		D8C9A58825F4D2990079A258 /* AttendanceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9A58725F4D2990079A258 /* AttendanceAPI.swift */; };
+		D8C9A61825F4DC640079A258 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9A61725F4DC640079A258 /* UserService.swift */; };
+		D8D023522659536400067AC8 /* LoginEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D023512659536400067AC8 /* LoginEmailViewController.swift */; };
+		D8D02355265A7CD900067AC8 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D8D02354265A7CD900067AC8 /* KeychainSwift */; };
+		D8D02357265A86B900067AC8 /* GroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D02356265A86B900067AC8 /* GroupsTableViewController.swift */; };
+		D8D02359265A871600067AC8 /* GroupsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D02358265A871600067AC8 /* GroupsDataSource.swift */; };
+		D8DCF11E25F4E1D40027C3B7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DCF11D25F4E1D40027C3B7 /* User.swift */; };
+		D8DCF12A25F4E2370027C3B7 /* Lecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DCF12925F4E2370027C3B7 /* Lecture.swift */; };
+		D8DCF13125F4E3070027C3B7 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DCF13025F4E3070027C3B7 /* Event.swift */; };
+		D8DCF13A25F4E43D0027C3B7 /* UserDefaults+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DCF13925F4E43D0027C3B7 /* UserDefaults+Storage.swift */; };
+		D8DCF15625F4F28B0027C3B7 /* MoyaProviderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DCF15525F4F28B0027C3B7 /* MoyaProviderFactory.swift */; };
+		D8DCF16425F50A240027C3B7 /* LoginNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DCF16325F50A240027C3B7 /* LoginNetworkManager.swift */; };
+		D8DD413B2619C6090079EADC /* EditEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DD413A2619C6090079EADC /* EditEventsViewController.swift */; };
+		D8E8985C2643365D0033BC38 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87EBA5925EEBCBA00A80DC8 /* LoginViewController.swift */; };
+		D8E89865264338040033BC38 /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E89864264338040033BC38 /* More.storyboard */; };
+		D8E89867264338210033BC38 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E89866264338210033BC38 /* Onboarding.storyboard */; };
+		D8E898692643C96B0033BC38 /* EventDetailDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E898682643C96B0033BC38 /* EventDetailDataSource.swift */; };
+		D8E89894264806180033BC38 /* EventsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E89893264806180033BC38 /* EventsDataSource.swift */; };
+		D8E89896264808660033BC38 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E89895264808660033BC38 /* Formatter.swift */; };
+		D8E898BD2649A56E0033BC38 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = D8E898BC2649A56E0033BC38 /* Charts */; };
+		D8E898C02649A5AF0033BC38 /* AttendancePieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E898BE2649A5AE0033BC38 /* AttendancePieChartCell.swift */; };
+		D8E898C12649A5AF0033BC38 /* AttendancePieChartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8E898BF2649A5AE0033BC38 /* AttendancePieChartCell.xib */; };
+		D8E898C32649A6F40033BC38 /* Attendance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E898C22649A6F40033BC38 /* Attendance.swift */; };
+		D8E898CC264AEF450033BC38 /* LectureInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E898CB264AEF450033BC38 /* LectureInfoViewController.swift */; };
+		D8E898CE264AEF740033BC38 /* LectureInfoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E898CD264AEF740033BC38 /* LectureInfoDataSource.swift */; };
+		D8E898D2264AF0200033BC38 /* LecureInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E898D0264AF0200033BC38 /* LecureInfoCell.swift */; };
+		D8E898D3264AF0200033BC38 /* LecureInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8E898D1264AF0200033BC38 /* LecureInfoCell.xib */; };
+		D8E898D9264AF3850033BC38 /* StudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E898D7264AF3850033BC38 /* StudentCell.swift */; };
+		D8E898DA264AF3850033BC38 /* StudentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8E898D8264AF3850033BC38 /* StudentCell.xib */; };
+		D8E898DD264AF61D0033BC38 /* LectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E898DB264AF61D0033BC38 /* LectorCell.swift */; };
+		D8E898DE264AF61D0033BC38 /* LectorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8E898DC264AF61D0033BC38 /* LectorCell.xib */; };
+		D8FFB90025FF62E400EBCCC0 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FFB8FF25FF62E400EBCCC0 /* RegistrationViewController.swift */; };
+		D8FFB95425FF969800EBCCC0 /* RegistrationNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FFB95325FF969800EBCCC0 /* RegistrationNetworkManager.swift */; };
+		D8FFB96C25FF9AD900EBCCC0 /* RegistrationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FFB96B25FF9AD900EBCCC0 /* RegistrationDataModel.swift */; };
+		D8FFB9C625FFBDB000EBCCC0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D8FFB9C525FFBDB000EBCCC0 /* FirebaseAnalytics */; };
+		D8FFB9C825FFBDB000EBCCC0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D8FFB9C725FFBDB000EBCCC0 /* FirebaseAuth */; };
+		D8FFB9CA25FFBDB000EBCCC0 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = D8FFB9C925FFBDB000EBCCC0 /* FirebaseCrashlytics */; };
+		D8FFB9D225FFBE9200EBCCC0 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = D8FFB9D125FFBE9200EBCCC0 /* Toast */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D87EBA1B25EEB28D00A80DC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D87EB9FC25EEB28800A80DC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D87EBA0325EEB28800A80DC8;
+			remoteInfo = QRCodeAttendance;
+		};
+		D87EBA2625EEB28D00A80DC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D87EB9FC25EEB28800A80DC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D87EBA0325EEB28800A80DC8;
+			remoteInfo = QRCodeAttendance;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4EAB22530991136D2B98B7CF /* Pods-QRCodeAttendance-Prod.prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeAttendance-Prod.prod.xcconfig"; path = "Target Support Files/Pods-QRCodeAttendance-Prod/Pods-QRCodeAttendance-Prod.prod.xcconfig"; sourceTree = "<group>"; };
+		58918B8EA100F9B5D25B5BCA /* Pods-QRCodeAttendance-Prod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeAttendance-Prod.debug.xcconfig"; path = "Target Support Files/Pods-QRCodeAttendance-Prod/Pods-QRCodeAttendance-Prod.debug.xcconfig"; sourceTree = "<group>"; };
+		A0C1D033082F98B60389D1E4 /* Pods-QRCodeAttendance-Prod.local.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCodeAttendance-Prod.local.xcconfig"; path = "Target Support Files/Pods-QRCodeAttendance-Prod/Pods-QRCodeAttendance-Prod.local.xcconfig"; sourceTree = "<group>"; };
+		A8ED910CFE07E3EBA47B15E0 /* libPods-QRCodeAttendance-Prod.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QRCodeAttendance-Prod.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D80468FA25FA2E21000327DF /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		D804690925FA30C1000327DF /* Lectures.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lectures.storyboard; sourceTree = "<group>"; };
+		D804691325FA3253000327DF /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		D804692625FA340E000327DF /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		D804692F25FA3435000327DF /* LecturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecturesViewController.swift; sourceTree = "<group>"; };
+		D804693D25FA3DCF000327DF /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		D804694625FA4376000327DF /* UIStoryboardExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtensions.swift; sourceTree = "<group>"; };
+		D81333682608BFDB00C72B68 /* SearchPushRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPushRow.swift; sourceTree = "<group>"; };
+		D81333A92608F28500C72B68 /* SelectUsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectUsersTableViewController.swift; sourceTree = "<group>"; };
+		D817524325F185E400AE207D /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		D817524825F1861000AE207D /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		D82C510626123F870006875F /* CreateGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupViewController.swift; sourceTree = "<group>"; };
+		D82C519D2613A0890006875F /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
+		D82C51A22613A1510006875F /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		D82C5220261658710006875F /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtensions.swift; sourceTree = "<group>"; };
+		D85F518525F166C400AD5A05 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		D85F518A25F1699700AD5A05 /* TextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputView.swift; sourceTree = "<group>"; };
+		D85F519325F16A7700AD5A05 /* TextInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextInputView.xib; sourceTree = "<group>"; };
+		D85F519B25F1828C00AD5A05 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		D87EBA0425EEB28800A80DC8 /* QRCodeAttendance-Prod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QRCodeAttendance-Prod.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87EBA0725EEB28800A80DC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D87EBA1025EEB28D00A80DC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D87EBA1525EEB28D00A80DC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D87EBA1A25EEB28D00A80DC8 /* QRCodeAttendanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeAttendanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87EBA1E25EEB28D00A80DC8 /* QRCodeAttendanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeAttendanceTests.swift; sourceTree = "<group>"; };
+		D87EBA2025EEB28D00A80DC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D87EBA2525EEB28D00A80DC8 /* QRCodeAttendanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeAttendanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87EBA2925EEB28D00A80DC8 /* QRCodeAttendanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeAttendanceUITests.swift; sourceTree = "<group>"; };
+		D87EBA2B25EEB28D00A80DC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D87EBA4325EEB7EE00A80DC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D87EBA4C25EEBA1400A80DC8 /* SegueIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueIdentifier.swift; sourceTree = "<group>"; };
+		D87EBA5425EEBAAF00A80DC8 /* UIViewControllerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerUtils.swift; sourceTree = "<group>"; };
+		D87EBA5925EEBCBA00A80DC8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D8A046642642B2F20014A119 /* MyQR.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyQR.storyboard; sourceTree = "<group>"; };
+		D8A046662642D6C20014A119 /* MyQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQRViewController.swift; sourceTree = "<group>"; };
+		D8A046692642DC3E0014A119 /* EventAttendeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAttendeeCell.swift; sourceTree = "<group>"; };
+		D8A0466A2642DC3E0014A119 /* EventAttendeeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventAttendeeCell.xib; sourceTree = "<group>"; };
+		D8A0466D2642EE140014A119 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8A0466F2643154D0014A119 /* LecturesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecturesDataModel.swift; sourceTree = "<group>"; };
+		D8A0467126431B9B0014A119 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		D8B0DE1125FE0E8C00A4B129 /* LoginDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataModel.swift; sourceTree = "<group>"; };
+		D8B1B67426011E6000CCF43D /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		D8B1B67D2601307100CCF43D /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		D8B1B68B2601334800CCF43D /* Faculty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faculty.swift; sourceTree = "<group>"; };
+		D8B34794262338ED005066C2 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
+		D8B347A026233B2D005066C2 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		D8B347A92623664F005066C2 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		D8BC42302621D87500686603 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		D8BC42312621D87500686603 /* EventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
+		D8BC940F25FB8C9B00BC4CEA /* ReplaceRootSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceRootSegue.swift; sourceTree = "<group>"; };
+		D8BC942D25FB97EF00BC4CEA /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
+		D8BC943B25FBA52500BC4CEA /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		D8BC945525FBAD2200BC4CEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D8BC946C25FBB9C300BC4CEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D8BC948425FBC5E000BC4CEA /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		D8BC94BB25FBCE9F00BC4CEA /* LectureCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureCellViewModel.swift; sourceTree = "<group>"; };
+		D8BC94CF25FBCF9600BC4CEA /* AnyCellRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCellRepresentable.swift; sourceTree = "<group>"; };
+		D8BC94E725FBCFF000BC4CEA /* CellRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRepresentable.swift; sourceTree = "<group>"; };
+		D8BC954F25FC006C00BC4CEA /* LectureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureTableViewCell.swift; sourceTree = "<group>"; };
+		D8BC955025FC006C00BC4CEA /* LectureTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LectureTableViewCell.xib; sourceTree = "<group>"; };
+		D8C8D6A32607623400EBAA82 /* LoginLinkAccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLinkAccountsViewController.swift; sourceTree = "<group>"; };
+		D8C8D6CF260773D300EBAA82 /* Networkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
+		D8C8D6E6260782DA00EBAA82 /* LecturesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecturesDataSource.swift; sourceTree = "<group>"; };
+		D8C8D70C2607BF7D00EBAA82 /* EditLectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLectureViewController.swift; sourceTree = "<group>"; };
+		D8C9A58725F4D2990079A258 /* AttendanceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceAPI.swift; sourceTree = "<group>"; };
+		D8C9A61725F4DC640079A258 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		D8D023512659536400067AC8 /* LoginEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailViewController.swift; sourceTree = "<group>"; };
+		D8D02356265A86B900067AC8 /* GroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewController.swift; sourceTree = "<group>"; };
+		D8D02358265A871600067AC8 /* GroupsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsDataSource.swift; sourceTree = "<group>"; };
+		D8DCF11D25F4E1D40027C3B7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D8DCF12925F4E2370027C3B7 /* Lecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lecture.swift; sourceTree = "<group>"; };
+		D8DCF13025F4E3070027C3B7 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		D8DCF13925F4E43D0027C3B7 /* UserDefaults+Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Storage.swift"; sourceTree = "<group>"; };
+		D8DCF15525F4F28B0027C3B7 /* MoyaProviderFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaProviderFactory.swift; sourceTree = "<group>"; };
+		D8DCF16325F50A240027C3B7 /* LoginNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNetworkManager.swift; sourceTree = "<group>"; };
+		D8DD413A2619C6090079EADC /* EditEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventsViewController.swift; sourceTree = "<group>"; };
+		D8E89864264338040033BC38 /* More.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
+		D8E89866264338210033BC38 /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		D8E898682643C96B0033BC38 /* EventDetailDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailDataSource.swift; sourceTree = "<group>"; };
+		D8E89893264806180033BC38 /* EventsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDataSource.swift; sourceTree = "<group>"; };
+		D8E89895264808660033BC38 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		D8E898BE2649A5AE0033BC38 /* AttendancePieChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendancePieChartCell.swift; sourceTree = "<group>"; };
+		D8E898BF2649A5AE0033BC38 /* AttendancePieChartCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttendancePieChartCell.xib; sourceTree = "<group>"; };
+		D8E898C22649A6F40033BC38 /* Attendance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attendance.swift; sourceTree = "<group>"; };
+		D8E898CB264AEF450033BC38 /* LectureInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureInfoViewController.swift; sourceTree = "<group>"; };
+		D8E898CD264AEF740033BC38 /* LectureInfoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureInfoDataSource.swift; sourceTree = "<group>"; };
+		D8E898D0264AF0200033BC38 /* LecureInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecureInfoCell.swift; sourceTree = "<group>"; };
+		D8E898D1264AF0200033BC38 /* LecureInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LecureInfoCell.xib; sourceTree = "<group>"; };
+		D8E898D7264AF3850033BC38 /* StudentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCell.swift; sourceTree = "<group>"; };
+		D8E898D8264AF3850033BC38 /* StudentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentCell.xib; sourceTree = "<group>"; };
+		D8E898DB264AF61D0033BC38 /* LectorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectorCell.swift; sourceTree = "<group>"; };
+		D8E898DC264AF61D0033BC38 /* LectorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LectorCell.xib; sourceTree = "<group>"; };
+		D8FFB8FF25FF62E400EBCCC0 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		D8FFB95325FF969800EBCCC0 /* RegistrationNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationNetworkManager.swift; sourceTree = "<group>"; };
+		D8FFB96B25FF9AD900EBCCC0 /* RegistrationDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationDataModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D87EBA0125EEB28800A80DC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8FFB9C625FFBDB000EBCCC0 /* FirebaseAnalytics in Frameworks */,
+				D8FFB9CA25FFBDB000EBCCC0 /* FirebaseCrashlytics in Frameworks */,
+				D82C5192261391AB0006875F /* MBProgressHUD in Frameworks */,
+				D8FFB9C825FFBDB000EBCCC0 /* FirebaseAuth in Frameworks */,
+				D8E898BD2649A56E0033BC38 /* Charts in Frameworks */,
+				D8FFB9D225FFBE9200EBCCC0 /* Toast in Frameworks */,
+				D8D02355265A7CD900067AC8 /* KeychainSwift in Frameworks */,
+				D8C9A57325F4D0C10079A258 /* Moya in Frameworks */,
+				D8B1B5D225FFC7D800CCF43D /* IQKeyboardManagerSwift in Frameworks */,
+				D8C8D7052607BEA600EBAA82 /* Eureka in Frameworks */,
+				2B7239E36ECC8E5C48061756 /* libPods-QRCodeAttendance-Prod.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87EBA1725EEB28D00A80DC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87EBA2225EEB28D00A80DC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24275CFCFC923B6DB8189B47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0C1D033082F98B60389D1E4 /* Pods-QRCodeAttendance-Prod.local.xcconfig */,
+				58918B8EA100F9B5D25B5BCA /* Pods-QRCodeAttendance-Prod.debug.xcconfig */,
+				4EAB22530991136D2B98B7CF /* Pods-QRCodeAttendance-Prod.prod.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		71D9B87D6D146B2E2107856E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8ED910CFE07E3EBA47B15E0 /* libPods-QRCodeAttendance-Prod.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D804690825FA30AC000327DF /* Lectures */ = {
+			isa = PBXGroup;
+			children = (
+				D8E898CA264AEEEC0033BC38 /* Info */,
+				D804690925FA30C1000327DF /* Lectures.storyboard */,
+				D804692F25FA3435000327DF /* LecturesViewController.swift */,
+				D8C8D6E6260782DA00EBAA82 /* LecturesDataSource.swift */,
+				D8C8D70B2607BF6E00EBAA82 /* Edit */,
+				D8BC94B025FBCE8500BC4CEA /* Cells */,
+				D8A0466F2643154D0014A119 /* LecturesDataModel.swift */,
+			);
+			path = Lectures;
+			sourceTree = "<group>";
+		};
+		D804691225FA3237000327DF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D804691325FA3253000327DF /* TabBar.storyboard */,
+				D804693D25FA3DCF000327DF /* TabBarViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D804691C25FA335A000327DF /* More */ = {
+			isa = PBXGroup;
+			children = (
+				D8E89864264338040033BC38 /* More.storyboard */,
+				D82C510526123F5D0006875F /* Group */,
+				D804692625FA340E000327DF /* MoreViewController.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		D81333622608BFCB00C72B68 /* SearchPushRow */ = {
+			isa = PBXGroup;
+			children = (
+				D81333682608BFDB00C72B68 /* SearchPushRow.swift */,
+			);
+			path = SearchPushRow;
+			sourceTree = "<group>";
+		};
+		D82C510526123F5D0006875F /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				D82C510626123F870006875F /* CreateGroupViewController.swift */,
+				D8D02356265A86B900067AC8 /* GroupsTableViewController.swift */,
+				D8D02358265A871600067AC8 /* GroupsDataSource.swift */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		D82C51962613A04D0006875F /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				D8B347A52623662C005066C2 /* Scanner */,
+				D8B3479C26233AF4005066C2 /* QR */,
+				D8B34793262338A5005066C2 /* Detail */,
+				D8BC422F2621D85500686603 /* Cells */,
+				D82C519D2613A0890006875F /* Events.storyboard */,
+				D82C51A22613A1510006875F /* EventsViewController.swift */,
+				D8E89893264806180033BC38 /* EventsDataSource.swift */,
+				D8DD41392619C5F30079EADC /* Edit */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		D85F518F25F1699B00AD5A05 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D8BC94CE25FBCF8800BC4CEA /* CellRepresentable */,
+				D8C9A57F25F4D1F30079A258 /* TextInputView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D87EB9FB25EEB28800A80DC8 = {
+			isa = PBXGroup;
+			children = (
+				D87EBA0625EEB28800A80DC8 /* QRCodeAttendance */,
+				D87EBA1D25EEB28D00A80DC8 /* QRCodeAttendanceTests */,
+				D87EBA2825EEB28D00A80DC8 /* QRCodeAttendanceUITests */,
+				D87EBA0525EEB28800A80DC8 /* Products */,
+				24275CFCFC923B6DB8189B47 /* Pods */,
+				71D9B87D6D146B2E2107856E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D87EBA0525EEB28800A80DC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D87EBA0425EEB28800A80DC8 /* QRCodeAttendance-Prod.app */,
+				D87EBA1A25EEB28D00A80DC8 /* QRCodeAttendanceTests.xctest */,
+				D87EBA2525EEB28D00A80DC8 /* QRCodeAttendanceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D87EBA0625EEB28800A80DC8 /* QRCodeAttendance */ = {
+			isa = PBXGroup;
+			children = (
+				D8C9A57825F4D1D80079A258 /* Common */,
+				D8C9A57725F4D1CB0079A258 /* Onboarding */,
+				D804690825FA30AC000327DF /* Lectures */,
+				D82C51962613A04D0006875F /* Events */,
+				D8A046632642B2DD0014A119 /* MyQR */,
+				D804691C25FA335A000327DF /* More */,
+				D87EBA0725EEB28800A80DC8 /* AppDelegate.swift */,
+				D8BC946C25FBB9C300BC4CEA /* SceneDelegate.swift */,
+				D87EBA1025EEB28D00A80DC8 /* Assets.xcassets */,
+				D87EBA1225EEB28D00A80DC8 /* LaunchScreen.storyboard */,
+				D87EBA1525EEB28D00A80DC8 /* Info.plist */,
+				D87EBA4325EEB7EE00A80DC8 /* GoogleService-Info.plist */,
+				D85F518525F166C400AD5A05 /* Colors.xcassets */,
+				D8BC945625FBAD2200BC4CEA /* Localizable.strings */,
+			);
+			path = QRCodeAttendance;
+			sourceTree = "<group>";
+		};
+		D87EBA1D25EEB28D00A80DC8 /* QRCodeAttendanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				D87EBA1E25EEB28D00A80DC8 /* QRCodeAttendanceTests.swift */,
+				D87EBA2025EEB28D00A80DC8 /* Info.plist */,
+			);
+			path = QRCodeAttendanceTests;
+			sourceTree = "<group>";
+		};
+		D87EBA2825EEB28D00A80DC8 /* QRCodeAttendanceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D87EBA2925EEB28D00A80DC8 /* QRCodeAttendanceUITests.swift */,
+				D87EBA2B25EEB28D00A80DC8 /* Info.plist */,
+			);
+			path = QRCodeAttendanceUITests;
+			sourceTree = "<group>";
+		};
+		D87EBA4B25EEB9E700A80DC8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D87EBA4C25EEBA1400A80DC8 /* SegueIdentifier.swift */,
+				D87EBA5425EEBAAF00A80DC8 /* UIViewControllerUtils.swift */,
+				D817524325F185E400AE207D /* UIViewExtensions.swift */,
+				D817524825F1861000AE207D /* StringExtensions.swift */,
+				D8DCF13925F4E43D0027C3B7 /* UserDefaults+Storage.swift */,
+				D804694625FA4376000327DF /* UIStoryboardExtensions.swift */,
+				D8BC942D25FB97EF00BC4CEA /* UIApplicationExtensions.swift */,
+				D8BC943B25FBA52500BC4CEA /* UIColorExtensions.swift */,
+				D8BC948425FBC5E000BC4CEA /* UITableViewExtensions.swift */,
+				D82C5220261658710006875F /* UITextFieldExtensions.swift */,
+				D8A0467126431B9B0014A119 /* Alert.swift */,
+				D8E89895264808660033BC38 /* Formatter.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D8A046632642B2DD0014A119 /* MyQR */ = {
+			isa = PBXGroup;
+			children = (
+				D8A046642642B2F20014A119 /* MyQR.storyboard */,
+				D8A046662642D6C20014A119 /* MyQRViewController.swift */,
+			);
+			path = MyQR;
+			sourceTree = "<group>";
+		};
+		D8A046682642DC280014A119 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D8A046692642DC3E0014A119 /* EventAttendeeCell.swift */,
+				D8A0466A2642DC3E0014A119 /* EventAttendeeCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D8B0DE1025FE0E7C00A4B129 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				D8B0DE1125FE0E8C00A4B129 /* LoginDataModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		D8B34793262338A5005066C2 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D8A046682642DC280014A119 /* Cells */,
+				D8B34794262338ED005066C2 /* EventDetailsViewController.swift */,
+				D8E898682643C96B0033BC38 /* EventDetailDataSource.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		D8B3479C26233AF4005066C2 /* QR */ = {
+			isa = PBXGroup;
+			children = (
+				D8B347A026233B2D005066C2 /* QRCodeViewController.swift */,
+			);
+			path = QR;
+			sourceTree = "<group>";
+		};
+		D8B347A52623662C005066C2 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				D8B347A92623664F005066C2 /* ScannerViewController.swift */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		D8BC422F2621D85500686603 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D8BC42302621D87500686603 /* EventCell.swift */,
+				D8BC42312621D87500686603 /* EventCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D8BC940425FB8C8B00BC4CEA /* Segues */ = {
+			isa = PBXGroup;
+			children = (
+				D8BC940F25FB8C9B00BC4CEA /* ReplaceRootSegue.swift */,
+			);
+			path = Segues;
+			sourceTree = "<group>";
+		};
+		D8BC94B025FBCE8500BC4CEA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D8BC956225FC007700BC4CEA /* Chart */,
+				D8BC94BB25FBCE9F00BC4CEA /* LectureCellViewModel.swift */,
+				D8BC954F25FC006C00BC4CEA /* LectureTableViewCell.swift */,
+				D8BC955025FC006C00BC4CEA /* LectureTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D8BC94CE25FBCF8800BC4CEA /* CellRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				D8BC94CF25FBCF9600BC4CEA /* AnyCellRepresentable.swift */,
+				D8BC94E725FBCFF000BC4CEA /* CellRepresentable.swift */,
+			);
+			path = CellRepresentable;
+			sourceTree = "<group>";
+		};
+		D8BC956225FC007700BC4CEA /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				D8E898BE2649A5AE0033BC38 /* AttendancePieChartCell.swift */,
+				D8E898BF2649A5AE0033BC38 /* AttendancePieChartCell.xib */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		D8C8D69D2606292000EBAA82 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		D8C8D70B2607BF6E00EBAA82 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				D8C8D70C2607BF7D00EBAA82 /* EditLectureViewController.swift */,
+				D81333A92608F28500C72B68 /* SelectUsersTableViewController.swift */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		D8C9A57725F4D1CB0079A258 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				D8D023502659535000067AC8 /* LoginEmail */,
+				D8E89866264338210033BC38 /* Onboarding.storyboard */,
+				D8FFB8FE25FF62A500EBCCC0 /* Register */,
+				D8C9A5F525F4D7FB0079A258 /* Login */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		D8C9A57825F4D1D80079A258 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D81333622608BFCB00C72B68 /* SearchPushRow */,
+				D8C8D69D2606292000EBAA82 /* Error */,
+				D8BC940425FB8C8B00BC4CEA /* Segues */,
+				D804691225FA3237000327DF /* ViewControllers */,
+				D8DCF11C25F4E1C10027C3B7 /* DataModels */,
+				D8C9A61125F4DC530079A258 /* Services */,
+				D8C9A58625F4D2900079A258 /* API */,
+				D87EBA4B25EEB9E700A80DC8 /* Extensions */,
+				D8C9A5F625F4D80C0079A258 /* Buttons */,
+				D85F518F25F1699B00AD5A05 /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D8C9A57F25F4D1F30079A258 /* TextInputView */ = {
+			isa = PBXGroup;
+			children = (
+				D85F518A25F1699700AD5A05 /* TextInputView.swift */,
+				D85F519325F16A7700AD5A05 /* TextInputView.xib */,
+			);
+			path = TextInputView;
+			sourceTree = "<group>";
+		};
+		D8C9A58625F4D2900079A258 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D8C9A58725F4D2990079A258 /* AttendanceAPI.swift */,
+				D8DCF15525F4F28B0027C3B7 /* MoyaProviderFactory.swift */,
+				D8DCF16325F50A240027C3B7 /* LoginNetworkManager.swift */,
+				D8FFB95325FF969800EBCCC0 /* RegistrationNetworkManager.swift */,
+				D8C8D6CF260773D300EBAA82 /* Networkable.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D8C9A5F525F4D7FB0079A258 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D8B0DE1025FE0E7C00A4B129 /* DataModel */,
+				D87EBA5925EEBCBA00A80DC8 /* LoginViewController.swift */,
+				D8C8D6A32607623400EBAA82 /* LoginLinkAccountsViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D8C9A5F625F4D80C0079A258 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				D85F519B25F1828C00AD5A05 /* PrimaryButton.swift */,
+				D8B1B67426011E6000CCF43D /* SecondaryButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		D8C9A61125F4DC530079A258 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D8C9A61725F4DC640079A258 /* UserService.swift */,
+				D80468FA25FA2E21000327DF /* ErrorHandler.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D8D023502659535000067AC8 /* LoginEmail */ = {
+			isa = PBXGroup;
+			children = (
+				D8D023512659536400067AC8 /* LoginEmailViewController.swift */,
+			);
+			path = LoginEmail;
+			sourceTree = "<group>";
+		};
+		D8DCF11C25F4E1C10027C3B7 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				D8DCF11D25F4E1D40027C3B7 /* User.swift */,
+				D8DCF12925F4E2370027C3B7 /* Lecture.swift */,
+				D8DCF13025F4E3070027C3B7 /* Event.swift */,
+				D8B1B67D2601307100CCF43D /* Group.swift */,
+				D8B1B68B2601334800CCF43D /* Faculty.swift */,
+				D8E898C22649A6F40033BC38 /* Attendance.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		D8DD41392619C5F30079EADC /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				D8DD413A2619C6090079EADC /* EditEventsViewController.swift */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		D8E898CA264AEEEC0033BC38 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				D8E898CF264AF0090033BC38 /* Cells */,
+				D8E898CB264AEF450033BC38 /* LectureInfoViewController.swift */,
+				D8E898CD264AEF740033BC38 /* LectureInfoDataSource.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		D8E898CF264AF0090033BC38 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D8E898D6264AF3760033BC38 /* LectorCell */,
+				D8E898D5264AF3670033BC38 /* StudentCell */,
+				D8E898D4264AF3530033BC38 /* LectureInfoCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D8E898D4264AF3530033BC38 /* LectureInfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				D8E898D0264AF0200033BC38 /* LecureInfoCell.swift */,
+				D8E898D1264AF0200033BC38 /* LecureInfoCell.xib */,
+			);
+			path = LectureInfoCell;
+			sourceTree = "<group>";
+		};
+		D8E898D5264AF3670033BC38 /* StudentCell */ = {
+			isa = PBXGroup;
+			children = (
+				D8E898D7264AF3850033BC38 /* StudentCell.swift */,
+				D8E898D8264AF3850033BC38 /* StudentCell.xib */,
+			);
+			path = StudentCell;
+			sourceTree = "<group>";
+		};
+		D8E898D6264AF3760033BC38 /* LectorCell */ = {
+			isa = PBXGroup;
+			children = (
+				D8E898DB264AF61D0033BC38 /* LectorCell.swift */,
+				D8E898DC264AF61D0033BC38 /* LectorCell.xib */,
+			);
+			path = LectorCell;
+			sourceTree = "<group>";
+		};
+		D8FFB8FE25FF62A500EBCCC0 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				D8FFB96A25FF9AC400EBCCC0 /* DataModel */,
+				D8FFB8FF25FF62E400EBCCC0 /* RegistrationViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		D8FFB96A25FF9AC400EBCCC0 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				D8FFB96B25FF9AD900EBCCC0 /* RegistrationDataModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D87EBA0325EEB28800A80DC8 /* QRCodeAttendance-Prod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D87EBA2E25EEB28D00A80DC8 /* Build configuration list for PBXNativeTarget "QRCodeAttendance-Prod" */;
+			buildPhases = (
+				3AB55113418943584AC346B4 /* [CP] Check Pods Manifest.lock */,
+				D87EBA0025EEB28800A80DC8 /* Sources */,
+				D87EBA0125EEB28800A80DC8 /* Frameworks */,
+				D87EBA0225EEB28800A80DC8 /* Resources */,
+				D8D0234C26557BA800067AC8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QRCodeAttendance-Prod";
+			packageProductDependencies = (
+				D8C9A57225F4D0C10079A258 /* Moya */,
+				D8FFB9C525FFBDB000EBCCC0 /* FirebaseAnalytics */,
+				D8FFB9C725FFBDB000EBCCC0 /* FirebaseAuth */,
+				D8FFB9C925FFBDB000EBCCC0 /* FirebaseCrashlytics */,
+				D8FFB9D125FFBE9200EBCCC0 /* Toast */,
+				D8B1B5D125FFC7D800CCF43D /* IQKeyboardManagerSwift */,
+				D8C8D7042607BEA600EBAA82 /* Eureka */,
+				D82C5191261391AB0006875F /* MBProgressHUD */,
+				D8E898BC2649A56E0033BC38 /* Charts */,
+				D8D02354265A7CD900067AC8 /* KeychainSwift */,
+			);
+			productName = QRCodeAttendance;
+			productReference = D87EBA0425EEB28800A80DC8 /* QRCodeAttendance-Prod.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D87EBA1925EEB28D00A80DC8 /* QRCodeAttendanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D87EBA3125EEB28D00A80DC8 /* Build configuration list for PBXNativeTarget "QRCodeAttendanceTests" */;
+			buildPhases = (
+				D87EBA1625EEB28D00A80DC8 /* Sources */,
+				D87EBA1725EEB28D00A80DC8 /* Frameworks */,
+				D87EBA1825EEB28D00A80DC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D87EBA1C25EEB28D00A80DC8 /* PBXTargetDependency */,
+			);
+			name = QRCodeAttendanceTests;
+			productName = QRCodeAttendanceTests;
+			productReference = D87EBA1A25EEB28D00A80DC8 /* QRCodeAttendanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D87EBA2425EEB28D00A80DC8 /* QRCodeAttendanceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D87EBA3425EEB28D00A80DC8 /* Build configuration list for PBXNativeTarget "QRCodeAttendanceUITests" */;
+			buildPhases = (
+				D87EBA2125EEB28D00A80DC8 /* Sources */,
+				D87EBA2225EEB28D00A80DC8 /* Frameworks */,
+				D87EBA2325EEB28D00A80DC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D87EBA2725EEB28D00A80DC8 /* PBXTargetDependency */,
+			);
+			name = QRCodeAttendanceUITests;
+			productName = QRCodeAttendanceUITests;
+			productReference = D87EBA2525EEB28D00A80DC8 /* QRCodeAttendanceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D87EB9FC25EEB28800A80DC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					D87EBA0325EEB28800A80DC8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					D87EBA1925EEB28D00A80DC8 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D87EBA0325EEB28800A80DC8;
+					};
+					D87EBA2425EEB28D00A80DC8 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D87EBA0325EEB28800A80DC8;
+					};
+				};
+			};
+			buildConfigurationList = D87EB9FF25EEB28800A80DC8 /* Build configuration list for PBXProject "QRCodeAttendance" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D87EB9FB25EEB28800A80DC8;
+			packageReferences = (
+				D8C9A57125F4D0C10079A258 /* XCRemoteSwiftPackageReference "Moya" */,
+				D8FFB9C425FFBDB000EBCCC0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D8FFB9D025FFBE9200EBCCC0 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				D8B1B5D025FFC7D800CCF43D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				D8C8D7032607BEA600EBAA82 /* XCRemoteSwiftPackageReference "Eureka" */,
+				D82C5190261391AB0006875F /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+				D8E898BB2649A56E0033BC38 /* XCRemoteSwiftPackageReference "Charts" */,
+				D8D02353265A7CD900067AC8 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
+			productRefGroup = D87EBA0525EEB28800A80DC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D87EBA0325EEB28800A80DC8 /* QRCodeAttendance-Prod */,
+				D87EBA1925EEB28D00A80DC8 /* QRCodeAttendanceTests */,
+				D87EBA2425EEB28D00A80DC8 /* QRCodeAttendanceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D87EBA0225EEB28800A80DC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D804690A25FA30C1000327DF /* Lectures.storyboard in Resources */,
+				D85F518625F166C400AD5A05 /* Colors.xcassets in Resources */,
+				D8E898C12649A5AF0033BC38 /* AttendancePieChartCell.xib in Resources */,
+				D87EBA1425EEB28D00A80DC8 /* LaunchScreen.storyboard in Resources */,
+				D85F519425F16A7700AD5A05 /* TextInputView.xib in Resources */,
+				D82C519E2613A0890006875F /* Events.storyboard in Resources */,
+				D8BC945225FBAD2200BC4CEA /* Localizable.strings in Resources */,
+				D8E898DE264AF61D0033BC38 /* LectorCell.xib in Resources */,
+				D8E89867264338210033BC38 /* Onboarding.storyboard in Resources */,
+				D8A046652642B2F20014A119 /* MyQR.storyboard in Resources */,
+				D8E898D3264AF0200033BC38 /* LecureInfoCell.xib in Resources */,
+				D8A0466C2642DC3E0014A119 /* EventAttendeeCell.xib in Resources */,
+				D8E898DA264AF3850033BC38 /* StudentCell.xib in Resources */,
+				D804691425FA3253000327DF /* TabBar.storyboard in Resources */,
+				D8E89865264338040033BC38 /* More.storyboard in Resources */,
+				D8BC42332621D87500686603 /* EventCell.xib in Resources */,
+				D8BC955425FC006C00BC4CEA /* LectureTableViewCell.xib in Resources */,
+				D87EBA4425EEB7EE00A80DC8 /* GoogleService-Info.plist in Resources */,
+				D87EBA1125EEB28D00A80DC8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87EBA1825EEB28D00A80DC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87EBA2325EEB28D00A80DC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AB55113418943584AC346B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QRCodeAttendance-Prod-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8D0234C26557BA800067AC8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D87EBA0025EEB28800A80DC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8B1B67526011E6000CCF43D /* SecondaryButton.swift in Sources */,
+				D8FFB95425FF969800EBCCC0 /* RegistrationNetworkManager.swift in Sources */,
+				D804693025FA3435000327DF /* LecturesViewController.swift in Sources */,
+				D8FFB96C25FF9AD900EBCCC0 /* RegistrationDataModel.swift in Sources */,
+				D8B347A126233B2D005066C2 /* QRCodeViewController.swift in Sources */,
+				D87EBA5525EEBAAF00A80DC8 /* UIViewControllerUtils.swift in Sources */,
+				D804693E25FA3DCF000327DF /* TabBarViewController.swift in Sources */,
+				D8D02357265A86B900067AC8 /* GroupsTableViewController.swift in Sources */,
+				D8FFB90025FF62E400EBCCC0 /* RegistrationViewController.swift in Sources */,
+				D8A0467226431B9B0014A119 /* Alert.swift in Sources */,
+				D804694725FA4376000327DF /* UIStoryboardExtensions.swift in Sources */,
+				D8E898DD264AF61D0033BC38 /* LectorCell.swift in Sources */,
+				D81333692608BFDB00C72B68 /* SearchPushRow.swift in Sources */,
+				D8E89894264806180033BC38 /* EventsDataSource.swift in Sources */,
+				D8C8D70D2607BF7D00EBAA82 /* EditLectureViewController.swift in Sources */,
+				D8BC94E825FBCFF000BC4CEA /* CellRepresentable.swift in Sources */,
+				D8D023522659536400067AC8 /* LoginEmailViewController.swift in Sources */,
+				D8DCF11E25F4E1D40027C3B7 /* User.swift in Sources */,
+				D8E898692643C96B0033BC38 /* EventDetailDataSource.swift in Sources */,
+				D8E898D2264AF0200033BC38 /* LecureInfoCell.swift in Sources */,
+				D8B1B67E2601307200CCF43D /* Group.swift in Sources */,
+				D80468FB25FA2E21000327DF /* ErrorHandler.swift in Sources */,
+				D8E898D9264AF3850033BC38 /* StudentCell.swift in Sources */,
+				D8BC94BC25FBCE9F00BC4CEA /* LectureCellViewModel.swift in Sources */,
+				D804692725FA340E000327DF /* MoreViewController.swift in Sources */,
+				D8DCF13125F4E3070027C3B7 /* Event.swift in Sources */,
+				D8E898CE264AEF740033BC38 /* LectureInfoDataSource.swift in Sources */,
+				D8BC943C25FBA52500BC4CEA /* UIColorExtensions.swift in Sources */,
+				D8DCF12A25F4E2370027C3B7 /* Lecture.swift in Sources */,
+				D8C8D6D0260773D300EBAA82 /* Networkable.swift in Sources */,
+				D8DCF15625F4F28B0027C3B7 /* MoyaProviderFactory.swift in Sources */,
+				D8BC948525FBC5E000BC4CEA /* UITableViewExtensions.swift in Sources */,
+				D8C8D6E7260782DA00EBAA82 /* LecturesDataSource.swift in Sources */,
+				D817524425F185E400AE207D /* UIViewExtensions.swift in Sources */,
+				D8C8D6A42607623400EBAA82 /* LoginLinkAccountsViewController.swift in Sources */,
+				D817524925F1861000AE207D /* StringExtensions.swift in Sources */,
+				D8A0466B2642DC3E0014A119 /* EventAttendeeCell.swift in Sources */,
+				D8B1B68C2601334800CCF43D /* Faculty.swift in Sources */,
+				D8DD413B2619C6090079EADC /* EditEventsViewController.swift in Sources */,
+				D8BC42322621D87500686603 /* EventCell.swift in Sources */,
+				D8C9A58825F4D2990079A258 /* AttendanceAPI.swift in Sources */,
+				D82C5221261658720006875F /* UITextFieldExtensions.swift in Sources */,
+				D8B0DE1225FE0E8C00A4B129 /* LoginDataModel.swift in Sources */,
+				D8A046702643154D0014A119 /* LecturesDataModel.swift in Sources */,
+				D85F519C25F1828C00AD5A05 /* PrimaryButton.swift in Sources */,
+				D82C510726123F870006875F /* CreateGroupViewController.swift in Sources */,
+				D8E89896264808660033BC38 /* Formatter.swift in Sources */,
+				D8BC942E25FB97EF00BC4CEA /* UIApplicationExtensions.swift in Sources */,
+				D8DCF16425F50A240027C3B7 /* LoginNetworkManager.swift in Sources */,
+				D81333AA2608F28500C72B68 /* SelectUsersTableViewController.swift in Sources */,
+				D85F518B25F1699700AD5A05 /* TextInputView.swift in Sources */,
+				D8BC941025FB8C9B00BC4CEA /* ReplaceRootSegue.swift in Sources */,
+				D8E8985C2643365D0033BC38 /* LoginViewController.swift in Sources */,
+				D8B347AA2623664F005066C2 /* ScannerViewController.swift in Sources */,
+				D8C9A61825F4DC640079A258 /* UserService.swift in Sources */,
+				D8BC946D25FBB9C300BC4CEA /* SceneDelegate.swift in Sources */,
+				D8DCF13A25F4E43D0027C3B7 /* UserDefaults+Storage.swift in Sources */,
+				D8E898C02649A5AF0033BC38 /* AttendancePieChartCell.swift in Sources */,
+				D8BC94D025FBCF9600BC4CEA /* AnyCellRepresentable.swift in Sources */,
+				D8B34795262338ED005066C2 /* EventDetailsViewController.swift in Sources */,
+				D8D02359265A871600067AC8 /* GroupsDataSource.swift in Sources */,
+				D8E898C32649A6F40033BC38 /* Attendance.swift in Sources */,
+				D8E898CC264AEF450033BC38 /* LectureInfoViewController.swift in Sources */,
+				D8BC955125FC006C00BC4CEA /* LectureTableViewCell.swift in Sources */,
+				D87EBA4D25EEBA1400A80DC8 /* SegueIdentifier.swift in Sources */,
+				D8A046672642D6C20014A119 /* MyQRViewController.swift in Sources */,
+				D87EBA0825EEB28800A80DC8 /* AppDelegate.swift in Sources */,
+				D82C51A32613A1510006875F /* EventsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87EBA1625EEB28D00A80DC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87EBA1F25EEB28D00A80DC8 /* QRCodeAttendanceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87EBA2125EEB28D00A80DC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87EBA2A25EEB28D00A80DC8 /* QRCodeAttendanceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D87EBA1C25EEB28D00A80DC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D87EBA0325EEB28800A80DC8 /* QRCodeAttendance-Prod */;
+			targetProxy = D87EBA1B25EEB28D00A80DC8 /* PBXContainerItemProxy */;
+		};
+		D87EBA2725EEB28D00A80DC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D87EBA0325EEB28800A80DC8 /* QRCodeAttendance-Prod */;
+			targetProxy = D87EBA2625EEB28D00A80DC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D87EBA1225EEB28D00A80DC8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8A0466D2642EE140014A119 /* en */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D8BC945625FBAD2200BC4CEA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8BC945525FBAD2200BC4CEA /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D87EBA2C25EEB28D00A80DC8 /* Local */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Local;
+		};
+		D87EBA2D25EEB28D00A80DC8 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Prod;
+		};
+		D87EBA2F25EEB28D00A80DC8 /* Local */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0C1D033082F98B60389D1E4 /* Pods-QRCodeAttendance-Prod.local.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42P4UUSCJX;
+				INFOPLIST_FILE = QRCodeAttendance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Laurynas.QRCodeAttendanceApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Local;
+		};
+		D87EBA3025EEB28D00A80DC8 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EAB22530991136D2B98B7CF /* Pods-QRCodeAttendance-Prod.prod.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42P4UUSCJX;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = QRCodeAttendance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Laurynas.QRCodeAttendanceApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Prod;
+		};
+		D87EBA3225EEB28D00A80DC8 /* Local */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5C25GL88K;
+				INFOPLIST_FILE = QRCodeAttendanceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Laurynas.QRCodeAttendanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRCodeAttendance.app/QRCodeAttendance";
+			};
+			name = Local;
+		};
+		D87EBA3325EEB28D00A80DC8 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5C25GL88K;
+				INFOPLIST_FILE = QRCodeAttendanceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Laurynas.QRCodeAttendanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRCodeAttendance.app/QRCodeAttendance";
+			};
+			name = Prod;
+		};
+		D87EBA3525EEB28D00A80DC8 /* Local */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5C25GL88K;
+				INFOPLIST_FILE = QRCodeAttendanceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Laurynas.QRCodeAttendanceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QRCodeAttendance;
+			};
+			name = Local;
+		};
+		D87EBA3625EEB28D00A80DC8 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5C25GL88K;
+				INFOPLIST_FILE = QRCodeAttendanceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Laurynas.QRCodeAttendanceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QRCodeAttendance;
+			};
+			name = Prod;
+		};
+		D8C9A59225F4D5370079A258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8C9A59325F4D5370079A258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58918B8EA100F9B5D25B5BCA /* Pods-QRCodeAttendance-Prod.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42P4UUSCJX;
+				INFOPLIST_FILE = QRCodeAttendance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Laurynas.QRCodeAttendanceApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8C9A59425F4D5370079A258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5C25GL88K;
+				INFOPLIST_FILE = QRCodeAttendanceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Laurynas.QRCodeAttendanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRCodeAttendance.app/QRCodeAttendance";
+			};
+			name = Debug;
+		};
+		D8C9A59525F4D5370079A258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5C25GL88K;
+				INFOPLIST_FILE = QRCodeAttendanceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Laurynas.QRCodeAttendanceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QRCodeAttendance;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D87EB9FF25EEB28800A80DC8 /* Build configuration list for PBXProject "QRCodeAttendance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87EBA2C25EEB28D00A80DC8 /* Local */,
+				D8C9A59225F4D5370079A258 /* Debug */,
+				D87EBA2D25EEB28D00A80DC8 /* Prod */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Prod;
+		};
+		D87EBA2E25EEB28D00A80DC8 /* Build configuration list for PBXNativeTarget "QRCodeAttendance-Prod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87EBA2F25EEB28D00A80DC8 /* Local */,
+				D8C9A59325F4D5370079A258 /* Debug */,
+				D87EBA3025EEB28D00A80DC8 /* Prod */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Prod;
+		};
+		D87EBA3125EEB28D00A80DC8 /* Build configuration list for PBXNativeTarget "QRCodeAttendanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87EBA3225EEB28D00A80DC8 /* Local */,
+				D8C9A59425F4D5370079A258 /* Debug */,
+				D87EBA3325EEB28D00A80DC8 /* Prod */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Prod;
+		};
+		D87EBA3425EEB28D00A80DC8 /* Build configuration list for PBXNativeTarget "QRCodeAttendanceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87EBA3525EEB28D00A80DC8 /* Local */,
+				D8C9A59525F4D5370079A258 /* Debug */,
+				D87EBA3625EEB28D00A80DC8 /* Prod */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Prod;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D82C5190261391AB0006875F /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		D8B1B5D025FFC7D800CCF43D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
+		D8C8D7032607BEA600EBAA82 /* XCRemoteSwiftPackageReference "Eureka" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xmartlabs/Eureka";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.3;
+			};
+		};
+		D8C9A57125F4D0C10079A258 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.1;
+			};
+		};
+		D8D02353265A7CD900067AC8 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 19.0.0;
+			};
+		};
+		D8E898BB2649A56E0033BC38 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+		D8FFB9C425FFBDB000EBCCC0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.8.1;
+			};
+		};
+		D8FFB9D025FFBE9200EBCCC0 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D82C5191261391AB0006875F /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D82C5190261391AB0006875F /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
+		D8B1B5D125FFC7D800CCF43D /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8B1B5D025FFC7D800CCF43D /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		D8C8D7042607BEA600EBAA82 /* Eureka */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8C8D7032607BEA600EBAA82 /* XCRemoteSwiftPackageReference "Eureka" */;
+			productName = Eureka;
+		};
+		D8C9A57225F4D0C10079A258 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8C9A57125F4D0C10079A258 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		D8D02354265A7CD900067AC8 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8D02353265A7CD900067AC8 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+		D8E898BC2649A56E0033BC38 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8E898BB2649A56E0033BC38 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+		D8FFB9C525FFBDB000EBCCC0 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8FFB9C425FFBDB000EBCCC0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		D8FFB9C725FFBDB000EBCCC0 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8FFB9C425FFBDB000EBCCC0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D8FFB9C925FFBDB000EBCCC0 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8FFB9C425FFBDB000EBCCC0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		D8FFB9D125FFBE9200EBCCC0 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8FFB9D025FFBE9200EBCCC0 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D87EB9FC25EEB28800A80DC8 /* Project object */;
+}

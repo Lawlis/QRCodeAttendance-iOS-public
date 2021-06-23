@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="196" id="KGk-i7-Jjw" customClass="EventCell" customModule="QRCodeAttendance_Prod" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="196"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="196"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3hs-kg-Yny" userLabel="ContainerView">
+                        <rect key="frame" x="16" y="16" width="332" height="164"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Gni-H0-Lvr">
+                                <rect key="frame" x="0.0" y="0.0" width="332" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteboard" translatesAutoresizingMaskIntoConstraints="NO" id="ry2-6c-EUK">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <color key="tintColor" name="PrimaryAccent"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="XK3-0M-bBZ"/>
+                                            <constraint firstAttribute="width" secondItem="ry2-6c-EUK" secondAttribute="height" multiplier="1:1" id="x0E-Cd-p9t"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yPW-dS-K37">
+                                        <rect key="frame" x="88" y="0.0" width="244" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Event title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3o-vP-kfX">
+                                                <rect key="frame" x="0.0" y="0.0" width="84" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                <color key="textColor" name="PrimaryText"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OgL-U8-g93">
+                                                <rect key="frame" x="0.0" y="32" width="152" height="48"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sat, 10 Apr 2021 14:01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rue-5I-62k">
+                                                        <rect key="frame" x="42" y="2" width="126.5" height="14.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time_start" translatesAutoresizingMaskIntoConstraints="NO" id="1PB-Ln-tkW">
+                                                        <rect key="frame" x="8" y="0.0" width="18" height="18"/>
+                                                        <color key="tintColor" name="PrimaryAccent"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sat, 10 Apr 2021 14:01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6v-O6-KB9">
+                                                        <rect key="frame" x="42" y="32" width="126.5" height="14.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time_end" translatesAutoresizingMaskIntoConstraints="NO" id="BxR-Kr-ajr">
+                                                        <rect key="frame" x="8" y="30" width="18" height="18"/>
+                                                        <color key="tintColor" name="PrimaryAccent"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="BxR-Kr-ajr" secondAttribute="bottom" id="C4v-AN-uUO"/>
+                                                    <constraint firstItem="1PB-Ln-tkW" firstAttribute="leading" secondItem="OgL-U8-g93" secondAttribute="leading" constant="8" id="Ff2-b8-MNq"/>
+                                                    <constraint firstItem="1PB-Ln-tkW" firstAttribute="leading" secondItem="OgL-U8-g93" secondAttribute="leading" constant="8" id="GjG-3X-Gyq"/>
+                                                    <constraint firstItem="Rue-5I-62k" firstAttribute="centerY" secondItem="1PB-Ln-tkW" secondAttribute="centerY" id="HJc-eU-VQe"/>
+                                                    <constraint firstItem="h6v-O6-KB9" firstAttribute="centerY" secondItem="BxR-Kr-ajr" secondAttribute="centerY" id="JPu-oe-bo3"/>
+                                                    <constraint firstItem="BxR-Kr-ajr" firstAttribute="leading" secondItem="OgL-U8-g93" secondAttribute="leading" constant="8" id="RaH-3S-Oig"/>
+                                                    <constraint firstItem="1PB-Ln-tkW" firstAttribute="top" secondItem="OgL-U8-g93" secondAttribute="top" id="c2S-RK-gue"/>
+                                                    <constraint firstItem="h6v-O6-KB9" firstAttribute="leading" secondItem="BxR-Kr-ajr" secondAttribute="trailing" constant="16" id="con-pS-f6B"/>
+                                                    <constraint firstItem="Rue-5I-62k" firstAttribute="leading" secondItem="1PB-Ln-tkW" secondAttribute="trailing" constant="16" id="rNF-t3-03y"/>
+                                                    <constraint firstAttribute="height" constant="48" id="wBS-WE-Keb"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="yhc-nO-e9S">
+                                <rect key="frame" x="0.0" y="88" width="332" height="76"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="g47-Mg-ynh">
+                                        <rect key="frame" x="0.0" y="0.0" width="332" height="60"/>
+                                        <subviews>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30e-44-cjD" customClass="PrimaryButton" customModule="QRCodeAttendance_Prod" customModuleProvider="target">
+                                                <rect key="frame" x="332" y="0.0" width="0.0" height="30"/>
+                                                <state key="normal" title="Check in"/>
+                                                <connections>
+                                                    <action selector="checkInButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3sV-29-7xH"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sR7-Xl-2ne" customClass="PrimaryButton" customModule="QRCodeAttendance_Prod" customModuleProvider="target">
+                                                <rect key="frame" x="332" y="0.0" width="0.0" height="30"/>
+                                                <state key="normal" title="Check out"/>
+                                                <connections>
+                                                    <action selector="checkOutButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BqG-yi-uMh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7Tk-ws-kA1">
+                                        <rect key="frame" x="0.0" y="76" width="332" height="0.0"/>
+                                        <subviews>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4az-FN-Ewl" customClass="SecondaryButton" customModule="QRCodeAttendance_Prod" customModuleProvider="target">
+                                                <rect key="frame" x="332" y="0.0" width="0.0" height="30"/>
+                                                <state key="normal" title="Check in colleague"/>
+                                                <connections>
+                                                    <action selector="checkInColleagueTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="viQ-OQ-vjA"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0x-Kq-JRi" customClass="SecondaryButton" customModule="QRCodeAttendance_Prod" customModuleProvider="target">
+                                                <rect key="frame" x="332" y="0.0" width="0.0" height="30"/>
+                                                <state key="normal" title="Check out colleague"/>
+                                                <connections>
+                                                    <action selector="checkOutColleagueTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ldO-sb-KOF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qpT-M5-PS2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qpT-M5-PS2" firstAttribute="bottom" secondItem="yhc-nO-e9S" secondAttribute="bottom" id="0DF-m3-BUA"/>
+                            <constraint firstItem="Gni-H0-Lvr" firstAttribute="top" secondItem="qpT-M5-PS2" secondAttribute="top" id="Av0-o3-FAi"/>
+                            <constraint firstItem="Gni-H0-Lvr" firstAttribute="leading" secondItem="qpT-M5-PS2" secondAttribute="leading" id="HC6-a2-pTP"/>
+                            <constraint firstItem="yhc-nO-e9S" firstAttribute="leading" secondItem="qpT-M5-PS2" secondAttribute="leading" id="a7l-Ga-Rb8"/>
+                            <constraint firstItem="qpT-M5-PS2" firstAttribute="trailing" secondItem="Gni-H0-Lvr" secondAttribute="trailing" id="chr-aV-vgv"/>
+                            <constraint firstItem="qpT-M5-PS2" firstAttribute="trailing" secondItem="yhc-nO-e9S" secondAttribute="trailing" id="pnH-sC-Kj0"/>
+                            <constraint firstItem="yhc-nO-e9S" firstAttribute="top" secondItem="Gni-H0-Lvr" secondAttribute="bottom" constant="8" id="veZ-no-I3Q"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3hs-kg-Yny" secondAttribute="bottom" constant="16" id="CW8-MY-CxV"/>
+                    <constraint firstItem="3hs-kg-Yny" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="HrK-Lq-fHd"/>
+                    <constraint firstItem="3hs-kg-Yny" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="a2h-gj-JFC"/>
+                    <constraint firstAttribute="trailing" secondItem="3hs-kg-Yny" secondAttribute="trailing" constant="16" id="wfK-Fo-Ytm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkInBtn" destination="30e-44-cjD" id="jSU-5t-XaA"/>
+                <outlet property="checkInColleagueBtn" destination="4az-FN-Ewl" id="yq3-Aa-v7d"/>
+                <outlet property="checkOutBtn" destination="sR7-Xl-2ne" id="fBH-Au-Ta3"/>
+                <outlet property="checkOutColleagueBtn" destination="D0x-Kq-JRi" id="luB-uR-xMR"/>
+                <outlet property="endDateLabel" destination="h6v-O6-KB9" id="Xzd-UH-OqN"/>
+                <outlet property="eventImageView" destination="ry2-6c-EUK" id="BDc-fr-DwF"/>
+                <outlet property="startDateLabel" destination="Rue-5I-62k" id="eYy-a6-vEb"/>
+                <outlet property="titleLabel" destination="H3o-vP-kfX" id="DB4-Yt-vj6"/>
+            </connections>
+            <point key="canvasLocation" x="-23.188405797101453" y="161.38392857142856"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="30e-44-cjD">
+            <size key="intrinsicContentSize" width="60" height="30"/>
+        </designable>
+        <designable name="4az-FN-Ewl">
+            <size key="intrinsicContentSize" width="130" height="30"/>
+        </designable>
+        <designable name="D0x-Kq-JRi">
+            <size key="intrinsicContentSize" width="140" height="30"/>
+        </designable>
+        <designable name="sR7-Xl-2ne">
+            <size key="intrinsicContentSize" width="70" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="time_end" width="18" height="18"/>
+        <image name="time_start" width="18" height="18"/>
+        <image name="whiteboard" width="512" height="512"/>
+        <namedColor name="PrimaryAccent">
+            <color red="0.43900001049041748" green="0.80800002813339233" blue="0.875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryText">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

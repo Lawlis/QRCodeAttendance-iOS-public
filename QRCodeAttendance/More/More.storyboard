@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nsz-QV-1k1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--More-->
+        <scene sceneID="de3-RN-aeQ">
+            <objects>
+                <navigationController id="nsz-QV-1k1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="More" image="ellipsis.circle" catalog="system" id="o8m-wG-EyD"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lkP-xA-1YH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2jm-bP-SCY" kind="relationship" relationship="rootViewController" id="Db2-vt-2mP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ofo-7C-ag0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-657" y="139"/>
+        </scene>
+        <!--More View Controller-->
+        <scene sceneID="vMx-x1-Fnz">
+            <objects>
+                <viewController id="2jm-bP-SCY" customClass="MoreViewController" customModule="QRCodeAttendance_Prod" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BDa-up-ErT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Ayz-KR-21a">
+                                <rect key="frame" x="132" y="345.5" width="150" height="210"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEX-cp-beF" customClass="SecondaryButton" customModule="QRCodeAttendance_Prod" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="L3T-8X-BE1"/>
+                                        </constraints>
+                                        <state key="normal" title="Import students"/>
+                                        <connections>
+                                            <action selector="importPressed:" destination="2jm-bP-SCY" eventType="touchUpInside" id="Oh0-Tr-GXn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3J-n0-sMO" customClass="SecondaryButton" customModule="QRCodeAttendance_Prod" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="60" width="150" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="v9s-do-gCq"/>
+                                        </constraints>
+                                        <state key="normal" title="Groups"/>
+                                        <connections>
+                                            <segue destination="fy9-he-nLo" kind="show" id="iLF-wh-TpB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cui-NP-qkR" customClass="SecondaryButton" customModule="QRCodeAttendance_Prod" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="120" width="150" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="qPN-pw-uF6"/>
+                                        </constraints>
+                                        <state key="normal" title="Faculties"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRp-1h-cGz" customClass="SecondaryButton" customModule="QRCodeAttendance_Prod" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="180" width="150" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="3Ir-x8-ST2"/>
+                                        </constraints>
+                                        <state key="normal" title="Logout"/>
+                                        <connections>
+                                            <action selector="logoutButtonPressed:" destination="2jm-bP-SCY" eventType="touchUpInside" id="cLW-ai-BvW"/>
+                                            <segue destination="6kL-A0-22f" kind="custom" customClass="ReplaceRootSegue" customModule="QRCodeAttendance_Prod" customModuleProvider="target" id="CNj-9n-9Hx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ymh-ew-A7B"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ayz-KR-21a" firstAttribute="centerX" secondItem="ymh-ew-A7B" secondAttribute="centerX" id="Iec-eV-3Hv"/>
+                            <constraint firstItem="Ayz-KR-21a" firstAttribute="centerY" secondItem="ymh-ew-A7B" secondAttribute="centerY" id="dAM-oX-FpQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Uyv-Wp-yXe"/>
+                    <connections>
+                        <outlet property="createFacultyBtn" destination="cui-NP-qkR" id="jMc-qF-S6a"/>
+                        <outlet property="createGroupBtn" destination="x3J-n0-sMO" id="iEr-34-gth"/>
+                        <outlet property="importStudentsBtn" destination="ZEX-cp-beF" id="evD-B6-vSn"/>
+                        <outlet property="logoutBtn" destination="cRp-1h-cGz" id="qmW-tj-KBF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gvW-2Y-2Wm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="139"/>
+        </scene>
+        <!--Onboarding-->
+        <scene sceneID="eJm-Ap-rPD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Onboarding" id="6kL-A0-22f" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g0Y-hY-nKI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1140" y="139"/>
+        </scene>
+        <!--Groups Table View Controller-->
+        <scene sceneID="xlA-cX-hDk">
+            <objects>
+                <tableViewController id="fy9-he-nLo" customClass="GroupsTableViewController" customModule="QRCodeAttendance_Prod" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7pu-AR-cJ0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="fy9-he-nLo" id="OMx-or-wPu"/>
+                            <outlet property="delegate" destination="fy9-he-nLo" id="3s0-3m-dvW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="e9w-tb-ECM"/>
+                    <connections>
+                        <segue destination="DhR-Y3-SoQ" kind="show" identifier="ShowCreateGroup" id="Xct-1P-08v"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zfH-sC-gqv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="907"/>
+        </scene>
+        <!--Create Group View Controller-->
+        <scene sceneID="gaV-OR-wkF">
+            <objects>
+                <viewController id="YH7-8l-uJh" customClass="CreateGroupViewController" customModule="QRCodeAttendance_Prod" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cTd-bn-peX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="w9O-rR-IaN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jFA-Uf-sce"/>
+                    <connections>
+                        <segue destination="l3M-YP-xeu" kind="unwind" identifier="UnwindFromGroups" unwindAction="unwindFromGroupViewControllerWithSegue:" id="txW-IV-pQU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="djj-lQ-TYq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="l3M-YP-xeu" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2083" y="907"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iy1-oi-fvc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DhR-Y3-SoQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="I7A-zs-PDj"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jaT-zw-TOQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YH7-8l-uJh" kind="relationship" relationship="rootViewController" id="fmm-E0-Ep1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bAP-eV-YI9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061" y="907"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="ZEX-cp-beF">
+            <size key="intrinsicContentSize" width="110" height="30"/>
+        </designable>
+        <designable name="cRp-1h-cGz">
+            <size key="intrinsicContentSize" width="48" height="30"/>
+        </designable>
+        <designable name="cui-NP-qkR">
+            <size key="intrinsicContentSize" width="61" height="30"/>
+        </designable>
+        <designable name="x3J-n0-sMO">
+            <size key="intrinsicContentSize" width="50" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ellipsis.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
